@@ -50,14 +50,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const name = document.getElementById('fullName').value;
             const phone = document.getElementById('phoneNumber').value;
-            const experience = document.getElementById('experience').value;
             const msg = document.getElementById('whatsappNumber').value; // Optional field
 
             // Construct WhatsApp Message
             let text = `היי, אני רוצה להצטרף ל-AllDayAllNight!\n`;
             text += `*שם:* ${name}\n`;
             text += `*טלפון:* ${phone}\n`;
-            text += `*ניסיון בפוקר:* ${experience === 'yes' ? 'כן' : 'לא'}\n`;
             if (msg) text += `*וואטסאפ נוסף:* ${msg}`;
 
             // Open WhatsApp
